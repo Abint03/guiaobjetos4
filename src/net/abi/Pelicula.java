@@ -2,22 +2,21 @@ package net.abi;
 
 import java.time.*;
 
-public class Pelicula extends Genero{
-   private String titulo;
-   private String lanzamiento;
-   private int duracion;
-   private String clasificacion;
-   private String siglasOrigen;
-   private String descripcion;
-   private Integer copias=0;
-   private Integer nroAlquileres;
+public class Pelicula {
+    private String titulo;
+    private String lanzamiento;
+    private int duracion;
+    private String clasificacion;
+    private String siglasOrigen;
+    private String descripcion;
+    private Integer copias=0;
+    private Integer nroAlquileres;
 
     public Pelicula() {
         super();
     }
 
     public Pelicula(String genero,String titulo, String lanzamiento, int duracion, String clasificacion, String siglasOrigen, String descripcion) {
-        super(genero);
         this.titulo = titulo;
         this.lanzamiento = lanzamiento;
         this.duracion = duracion;

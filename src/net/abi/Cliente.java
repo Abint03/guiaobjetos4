@@ -46,7 +46,13 @@ public class Cliente {
                 ", direccion: " + direccion;
     }
 
-    public void alquileres(String){
-        ult10Alquileres.add();
+    public void clienteAlquila(Boleta boleta){
+        ult10Alquileres.add(boleta);
+    }
+    public void mostrarUltimosAlquileres(){
+        for(int i=0;i<ult10Alquileres.size();i++){
+            System.out.println(ult10Alquileres.get(i));
+        }
+
     }
 }
